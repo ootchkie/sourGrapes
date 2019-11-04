@@ -12,8 +12,8 @@ void printFiles(string name[]);
 int main()
 {
   string name[8]; 
-  openFiles(name[8]);
-  printFiles(name[8]);
+  openFiles(name);
+  printFiles(name);
 return 0;
 }
 
@@ -37,7 +37,7 @@ return;
     
 void printFiles(string name[])
 {
-  if(int x=0; x<8; x++)
+  for(int x=0; x<8; x++)
       cout << name[x] <<endl;
   
   return;  
